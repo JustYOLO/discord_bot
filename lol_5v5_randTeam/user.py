@@ -1,8 +1,7 @@
-# user.py
+# User.py
 # lane: int -> 0~4 = top~sup / 5 = any lane
 
-class user:
-    __LANE = ["탑", "정글", "미드", "원딜", "서폿"]
+class User:
     def __init__(self, name: str, pref_lane: int) -> None:
         '''
         type: (str, int) -> None
@@ -10,6 +9,7 @@ class user:
         '''
         self.__user_name = name
         self.__user_lane = pref_lane
+        self.__LANE = ["탑", "정글", "미드", "원딜", "서폿"]
 
     def getName(self) -> str:
         '''
